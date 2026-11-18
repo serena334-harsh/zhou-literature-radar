@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {seed,filteredPapers,mergePapers,matches,canonical,bibtex} from '../src/data.ts';
+assert.equal(seed.papers.length,12);assert.equal(seed.topics.length,2);
+assert.equal(filteredPapers(seed,{role:'团队公开基线'}).length,3);
+assert.equal(filteredPapers(seed,{direction:'远程态制备 RSP'}).length,4);
+assert.equal(filteredPapers(seed,{q:'2610.42150'})[0].arxiv,'2610.42150');
+assert.equal(filteredPapers(seed,{from:'2026-10-01',to:'2026-10-31'}).length,2);
+assert.equal(filteredPapers(seed,{tag:'交叉Kerr'}).length,3);
+assert.equal(canonical('https://doi.org/10.1002/QUTE.202400583'),'10.1002/qute.202400583');
+const first=structuredClone(seed.papers[0]);const checked={...first,verified:'2026-11-19'};assert.equal(mergePapers([first],[checked]).changes.length,0);
+const newVersion={...first,version:'v2',updated:'2026-11-19'};assert.equal(mergePapers([first],[newVersion]).changes[0].kind,'版本信息变化');
+const journal={...first,id:'new-journal-id',doi:'10.1234/test-paper'};const merged=mergePapers([first],[journal]);assert.equal(merged.papers.length,1);assert.equal(merged.papers[0].id,first.id);
+const m=matches(seed.papers[0],seed.topics[1]);assert.equal(m.sameDirection,true);assert.equal(m.shared.length,0);assert.equal(m.unknown.length,5);
+const t=structuredClone(seed.topics[1]);t.dimensions.resource=['Bell纠缠'];assert.equal(matches(first,t).shared.length,1);
+assert.match(bibtex(first),/archivePrefix = \{arXiv\}/);
+assert.equal(new Set(seed.papers.map(x=>x.id)).size,12);
+console.log('Verified: direction/tag/date filters, canonical IDs, arXiv-to-journal deduplication, stable review IDs, meaningful version changes, no fake update on verification date, explicit unknown dimensions and BibTeX.');

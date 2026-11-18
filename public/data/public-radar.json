@@ -1,0 +1,768 @@
+{
+  "schemaVersion": 1,
+  "lastChecked": "2026-11-18",
+  "schedule": "GitHub Actions · 每日 09:00 洛杉矶时间（公开元数据扫描，可能延后）",
+  "topics": [
+    {
+      "id": "topic-rsp",
+      "name": "远程态制备 · 方向监测",
+      "direction": "远程态制备 RSP",
+      "kind": "公开方向",
+      "publicQuery": "\"remote state preparation\" (hyperentanglement OR qudit OR hierarchical OR noise)",
+      "privateAbstract": "",
+      "claimBoundary": "覆盖多自由度、高维、联合及受控制备。尚未录入具体在研稿件，不作稿件重叠或创新性结论。",
+      "dimensions": {
+        "target": [],
+        "resource": [],
+        "dofs": [],
+        "mechanism": [],
+        "topology": []
+      },
+      "active": true
+    },
+    {
+      "id": "topic-rio",
+      "name": "远程量子操作 · 方向监测",
+      "direction": "远程量子操作 RIO",
+      "kind": "公开方向",
+      "publicQuery": "(\"remote implementation\" OR \"gate teleportation\" OR \"quantum operations teleportation\") (quantum OR hyperentanglement)",
+      "privateAbstract": "",
+      "claimBoundary": "覆盖远程操作、非定域门、联合与分等级任务。重点核对操作集合、资源、参与方和器件假设。",
+      "dimensions": {
+        "target": [],
+        "resource": [],
+        "dofs": [],
+        "mechanism": [],
+        "topology": []
+      },
+      "active": true
+    }
+  ],
+  "papers": [
+    {
+      "doi": "",
+      "arxiv": "2610.42150",
+      "role": "外部文献",
+      "stage": "理论方案",
+      "access": "开放全文",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2026-10-30",
+      "updated": "",
+      "issueDate": "",
+      "dateNote": "未知日期留空；首次收录日不等于论文发表日。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "v1 · 预印本",
+      "sourceLabel": "arXiv 原始摘要与版本记录",
+      "priority": "重点核对",
+      "id": "arxiv:2610.42150",
+      "title": "Secret-shared teleportation of a two-qudit gate with a deferred recipient",
+      "zhTitle": "接收方延迟选择的两 qudit 门秘密共享传送",
+      "authors": "Tanay Roy",
+      "journal": "arXiv · quant-ph",
+      "direction": "远程量子操作 RIO",
+      "url": "https://arxiv.org/abs/2610.42150",
+      "summary": "提出先分配份额、后选择接收节点的两 qudit 门传送构造，目标包含非定域 CSUM 的幂。",
+      "focus": "与受控操作及授权机制相关，值得核对目标门、权限结构和资源消耗。",
+      "boundary": "摘要初筛；非光子多自由度并行协议，尚未核对完整证明与资源表。预印本不视为已同行评审。",
+      "nextAction": "精读授权条件与资源表，对照本组受控 / 分等级任务的定义。",
+      "dimensions": {
+        "target": [
+          "两qudit纠缠门"
+        ],
+        "resource": [
+          "Bell纠缠",
+          "秘密共享"
+        ],
+        "dofs": [
+          "抽象qudit"
+        ],
+        "mechanism": [
+          "量子电路",
+          "局域测量"
+        ],
+        "topology": [
+          "多方",
+          "受控"
+        ]
+      }
+    },
+    {
+      "doi": "",
+      "arxiv": "2610.04995",
+      "role": "外部文献",
+      "stage": "理论方案",
+      "access": "开放全文",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2026-10-04",
+      "updated": "",
+      "issueDate": "",
+      "dateNote": "未知日期留空；首次收录日不等于论文发表日。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "v1 · 预印本",
+      "sourceLabel": "arXiv 原始摘要与版本记录",
+      "priority": "重点核对",
+      "id": "arxiv:2610.04995",
+      "title": "Blind Remote Implementation of Arbitrary Two-Qubit Unitary Operation via Pre-Shared Entanglement",
+      "zhTitle": "预共享纠缠辅助的任意双比特幺正操作盲远程实现",
+      "authors": "Plaban Saha; Binayak S. Choudhury",
+      "journal": "arXiv · quant-ph",
+      "direction": "远程量子操作 RIO",
+      "url": "https://arxiv.org/abs/2610.04995",
+      "summary": "结合单比特 Euler 分解及双比特 Cartan 分解，以预共享 Bell 资源构造盲远程操作。",
+      "focus": "任意操作与受限操作的边界，以及操作参数由谁掌握，是优先比较点。",
+      "boundary": "摘要初筛；黑盒器件由第三方预配置的假设需要阅读全文核实，不推断光学实验可行性。",
+      "nextAction": "列出黑盒使用次数、纠缠成本和第三方已知信息，再与受限操作协议比较。",
+      "dimensions": {
+        "target": [
+          "任意双比特操作"
+        ],
+        "resource": [
+          "Bell纠缠"
+        ],
+        "dofs": [
+          "抽象qubit"
+        ],
+        "mechanism": [
+          "黑盒操作",
+          "量子电路"
+        ],
+        "topology": [
+          "两方",
+          "第三方配置",
+          "盲"
+        ]
+      }
+    },
+    {
+      "doi": "10.1007/s12043-026-03170-z",
+      "arxiv": "",
+      "role": "外部文献",
+      "stage": "理论方案",
+      "access": "摘要可读",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2026-08-06",
+      "updated": "",
+      "issueDate": "",
+      "dateNote": "未知日期留空；首次收录日不等于论文发表日。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "正式版本",
+      "sourceLabel": "出版社原始页面",
+      "priority": "重点核对",
+      "id": "doi:10.1007/s12043-026-03170-z",
+      "title": "Controlled remote implementation of operator via non-maximal hyperentanglement and its relevance",
+      "zhTitle": "非最大超纠缠辅助的受控远程操作及其量子性",
+      "authors": "Cao Thi Bich; Nguyen Ba An",
+      "journal": "Pramana 100, 121 (2026)",
+      "direction": "远程量子操作 RIO",
+      "url": "https://link.springer.com/article/10.1007/s12043-026-03170-z",
+      "summary": "将受控远程操作扩展到非最大超纠缠资源，并分析成功概率、量子性与控制能力。",
+      "focus": "核对非最大纠缠参数的知识分配、控制权定义和成功条件。",
+      "boundary": "摘要初筛；单位条件保真度与无条件表现需要分别比较，不把成功分支结果当成确定性。",
+      "nextAction": "整理条件保真度、成功率和控制权三项指标及参数假设。",
+      "dimensions": {
+        "target": [
+          "任意单比特操作"
+        ],
+        "resource": [
+          "部分纠缠",
+          "超纠缠"
+        ],
+        "dofs": [
+          "光子编码待精读"
+        ],
+        "mechanism": [
+          "局域测量"
+        ],
+        "topology": [
+          "三方",
+          "受控"
+        ]
+      }
+    },
+    {
+      "doi": "10.1016/j.optlastec.2026.115108",
+      "arxiv": "",
+      "role": "外部文献",
+      "stage": "理论方案",
+      "access": "摘要可读",
+      "readDepth": "摘要初筛",
+      "firstPublished": "",
+      "updated": "",
+      "issueDate": "2026-08",
+      "dateNote": "出版社检索页给出卷期月份 2026-08；首次在线日未核验，不以卷期日替代。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "正式版本",
+      "sourceLabel": "Elsevier 原始摘要检索结果",
+      "priority": "重点核对",
+      "id": "doi:10.1016/j.optlastec.2026.115108",
+      "title": "Joint quantum operations teleportation with a partially hyperentangled quantum channel",
+      "zhTitle": "部分超纠缠信道辅助的联合量子操作传送",
+      "authors": "Meiyu Wang; Jiashuai Cao",
+      "journal": "Optics & Laser Technology 200, 115108 (2026)",
+      "direction": "远程量子操作 RIO",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0030399226004597",
+      "summary": "以极化和时间自由度上的部分超纠缠 GHZ 信道研究联合量子操作传送。",
+      "focus": "需要区分“联合操作”与“多自由度并行操作”的任务结构，进一步比较光学工具。",
+      "boundary": "本次出版社正文访问受限，仅核验原始摘要检索结果；参与方细节和完整门序仍待精读。",
+      "nextAction": "获取可读全文，逐项核对作用对象、操作组合顺序、QND 与损耗模型。",
+      "dimensions": {
+        "target": [
+          "联合操作"
+        ],
+        "resource": [
+          "部分纠缠",
+          "GHZ",
+          "超纠缠"
+        ],
+        "dofs": [
+          "极化",
+          "时间"
+        ],
+        "mechanism": [
+          "交叉Kerr",
+          "X零差"
+        ],
+        "topology": [
+          "联合"
+        ]
+      }
+    },
+    {
+      "doi": "10.1140/epjqt/s40507-026-00537-4",
+      "arxiv": "",
+      "role": "外部文献",
+      "stage": "理论方案",
+      "access": "开放全文",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2026-06-23",
+      "updated": "2026-09-04",
+      "issueDate": "",
+      "dateNote": "出版社分别列出 Published 2026-06-23 与 Version of Record 2026-09-04，均保留；不推断后者一定为技术内容修订。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "正式版本",
+      "sourceLabel": "出版社原始页面",
+      "priority": "重点核对",
+      "id": "doi:10.1140/epjqt/s40507-026-00537-4",
+      "title": "Probabilistic joint remote implementation of quantum operations",
+      "zhTitle": "量子操作的概率式联合远程实现",
+      "authors": "Meiyu Wang; Ziyang Wang; Bing Di; Zheng Li",
+      "journal": "EPJ Quantum Technology 13, 94 (2026)",
+      "direction": "远程量子操作 RIO",
+      "url": "https://link.springer.com/article/10.1140/epjqt/s40507-026-00537-4",
+      "summary": "以三光子非最大超纠缠 GHZ 资源研究联合远程操作，并讨论成功率与光子耗散。",
+      "focus": "与 Kerr-QND、部分纠缠资源及性能分析有较强方法关联。",
+      "boundary": "摘要初筛；极化—空间编码与其他编码路线不同，技术内容是否在版本日期发生变化尚未核验。",
+      "nextAction": "比较资源、QND 结构和成功率定义；核对正式版本日期差异。",
+      "dimensions": {
+        "target": [
+          "联合操作"
+        ],
+        "resource": [
+          "部分纠缠",
+          "GHZ",
+          "超纠缠"
+        ],
+        "dofs": [
+          "极化",
+          "空间"
+        ],
+        "mechanism": [
+          "交叉Kerr",
+          "QND",
+          "X零差"
+        ],
+        "topology": [
+          "三方",
+          "联合"
+        ]
+      }
+    },
+    {
+      "doi": "10.1007/s11128-026-05234-w",
+      "arxiv": "",
+      "role": "外部文献",
+      "stage": "理论方案",
+      "access": "摘要可读",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2026-06-08",
+      "updated": "",
+      "issueDate": "",
+      "dateNote": "未知日期留空；首次收录日不等于论文发表日。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "正式版本",
+      "sourceLabel": "出版社原始页面",
+      "priority": "建议阅读",
+      "id": "doi:10.1007/s11128-026-05234-w",
+      "title": "Quantum network coding based on remote state preparation over the k-pair network",
+      "zhTitle": "基于远程态制备的 k 对量子网络编码",
+      "authors": "Zhenya Wang; Songya Ma; Si Jin",
+      "journal": "Quantum Information Processing 25, 206 (2026)",
+      "direction": "远程态制备 RSP",
+      "url": "https://link.springer.com/article/10.1007/s11128-026-05234-w",
+      "summary": "研究蝶形及 k 对网络中的远程单 qudit 态制备，并讨论非最大纠缠下的概率情形。",
+      "focus": "适合比较经典通信、网络拓扑和高维资源；需与本地多自由度并行容量区分。",
+      "boundary": "摘要初筛；摘要中的效率比较依赖网络与计费口径，不直接移用于另一协议。",
+      "nextAction": "核对经典 dits、瓶颈链路成本和扩展到 k 对网络的条件。",
+      "dimensions": {
+        "target": [
+          "单qudit态"
+        ],
+        "resource": [
+          "Bell纠缠",
+          "部分纠缠"
+        ],
+        "dofs": [
+          "抽象qudit"
+        ],
+        "mechanism": [
+          "POVM",
+          "投影测量"
+        ],
+        "topology": [
+          "多方",
+          "网络编码"
+        ]
+      }
+    },
+    {
+      "doi": "10.1007/s11128-026-05080-w",
+      "arxiv": "",
+      "role": "外部文献",
+      "stage": "理论与数值模拟",
+      "access": "摘要可读",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2026-02-12",
+      "updated": "",
+      "issueDate": "",
+      "dateNote": "未知日期留空；首次收录日不等于论文发表日。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "正式版本",
+      "sourceLabel": "出版社原始页面",
+      "priority": "建议阅读",
+      "id": "doi:10.1007/s11128-026-05080-w",
+      "title": "Multiparty joint remote state preparation via a GHZ-class network",
+      "zhTitle": "GHZ 类网络中的多方联合远程态制备",
+      "authors": "Junhao Zuo; Min Jiang; Yuzhen Wei",
+      "journal": "Quantum Information Processing 25, 63 (2026)",
+      "direction": "远程态制备 RSP",
+      "url": "https://link.springer.com/article/10.1007/s11128-026-05080-w",
+      "summary": "以非最大 GHZ 类链式网络开展多方联合态制备，并在 IBM Composer 中进行电路模拟。",
+      "focus": "关注目标态信息如何分配给中间节点，以及网络资源如何计数。",
+      "boundary": "摘要明确为模拟；不能据 IBM 平台名称推断已完成真实 QPU 实验。",
+      "nextAction": "比较信息分配、链长、测量和通信代价。",
+      "dimensions": {
+        "target": [
+          "多方联合态制备"
+        ],
+        "resource": [
+          "部分纠缠",
+          "GHZ"
+        ],
+        "dofs": [
+          "抽象qubit"
+        ],
+        "mechanism": [
+          "量子电路",
+          "局域测量"
+        ],
+        "topology": [
+          "多方",
+          "联合",
+          "链式网络"
+        ]
+      }
+    },
+    {
+      "doi": "10.1038/s41598-026-35816-8",
+      "arxiv": "",
+      "role": "外部文献",
+      "stage": "理论与数值模拟",
+      "access": "开放全文",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2026-02-04",
+      "updated": "",
+      "issueDate": "",
+      "dateNote": "未知日期留空；首次收录日不等于论文发表日。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "正式版本",
+      "sourceLabel": "出版社原始页面",
+      "priority": "建议阅读",
+      "id": "doi:10.1038/s41598-026-35816-8",
+      "title": "An efficient tripartite remote state preparation scheme with noise analysis",
+      "zhTitle": "含噪声分析的三方远程态制备方案",
+      "authors": "Mohammad Bolokian; Ali A. Orouji; Monireh Houshmand",
+      "journal": "Scientific Reports 16, 7243 (2026)",
+      "direction": "远程态制备 RSP",
+      "url": "https://www.nature.com/articles/s41598-026-35816-8",
+      "summary": "提出三用户远程态制备，提供 Qiskit 电路模拟及 Pauli 信道噪声分析。",
+      "focus": "可用作多用户任务与噪声评估的比较对象。",
+      "boundary": "摘要初筛；Qiskit 模拟与真实光学实验须区分，效率指标需重查资源口径。",
+      "nextAction": "提取目标态数、信道资源和噪声范围，检查可比性。",
+      "dimensions": {
+        "target": [
+          "单qubit态",
+          "多qubit态"
+        ],
+        "resource": [
+          "多比特纠缠"
+        ],
+        "dofs": [
+          "抽象qubit"
+        ],
+        "mechanism": [
+          "量子电路",
+          "Pauli噪声"
+        ],
+        "topology": [
+          "三方",
+          "多向"
+        ]
+      }
+    },
+    {
+      "doi": "10.1140/epjp/s13360-026-07289-1",
+      "arxiv": "",
+      "role": "团队公开基线",
+      "stage": "理论方案",
+      "access": "摘要可读",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2026-01-14",
+      "updated": "",
+      "issueDate": "",
+      "dateNote": "未知日期留空；首次收录日不等于论文发表日。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "正式版本",
+      "sourceLabel": "出版社原始页面",
+      "priority": "背景基线",
+      "id": "doi:10.1140/epjp/s13360-026-07289-1",
+      "title": "Deterministic multiparty hierarchical remote implementation of an arbitrary single-qubit operation via partially entangled state",
+      "zhTitle": "部分纠缠辅助的多方分等级单比特操作确定性远程实现",
+      "authors": "Shu-Heng Hou; Hong-Rui Liang; Jin-Wang Huang; Ping Zhou",
+      "journal": "EPJ Plus 141, 29 (2026)",
+      "direction": "远程量子操作 RIO",
+      "url": "https://link.springer.com/article/10.1140/epjp/s13360-026-07289-1",
+      "summary": "讨论部分纠缠信道下的多方分等级远程操作，明确高等级代理人对参数的掌握。",
+      "focus": "作为本组分等级 RIO 的公开比较锚点，追踪引用及相近任务。",
+      "boundary": "摘要初筛；成功条件依赖信息与控制结构，应逐项核验。学校列表与出版社文章号不同，本条采用出版社元数据。",
+      "nextAction": "建立知识分配、分等级权限与参数依赖的基线表。",
+      "dimensions": {
+        "target": [
+          "任意单比特操作"
+        ],
+        "resource": [
+          "部分纠缠"
+        ],
+        "dofs": [
+          "抽象qubit"
+        ],
+        "mechanism": [
+          "局域旋转",
+          "局域测量"
+        ],
+        "topology": [
+          "多方",
+          "分等级",
+          "受控"
+        ]
+      }
+    },
+    {
+      "doi": "10.1140/epjqt/s40507-025-00365-y",
+      "arxiv": "",
+      "role": "团队公开基线",
+      "stage": "理论方案",
+      "access": "开放全文",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2025-05-20",
+      "updated": "",
+      "issueDate": "",
+      "dateNote": "未知日期留空；首次收录日不等于论文发表日。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "正式版本",
+      "sourceLabel": "出版社原始页面",
+      "priority": "背景基线",
+      "id": "doi:10.1140/epjqt/s40507-025-00365-y",
+      "title": "Parallel remote preparation of two-qubit hybrid states on four degrees of freedom via two-photon hyperentangled Bell state",
+      "zhTitle": "双光子超纠缠 Bell 态辅助的四自由度混合态并行远程制备",
+      "authors": "Cheng-Ming Huang; Yu-Bin Huang; Ping Zhou",
+      "journal": "EPJ Quantum Technology 12, 55 (2025)",
+      "direction": "远程态制备 RSP",
+      "url": "https://link.springer.com/article/10.1140/epjqt/s40507-025-00365-y",
+      "summary": "以双光子超纠缠资源研究四自由度上的两比特混合态并行制备，并讨论部分超纠缠情形。",
+      "focus": "作为多自由度 RSP 的公开基线，用于构造资源与编码维度的比较表。",
+      "boundary": "摘要初筛；目标态制备与未知输入上的远程操作属于不同任务，应分别核对。",
+      "nextAction": "整理四种编码、目标态系数已知条件和部分纠缠分支。",
+      "dimensions": {
+        "target": [
+          "两qubit混合态"
+        ],
+        "resource": [
+          "超纠缠光子对",
+          "Bell纠缠",
+          "部分纠缠"
+        ],
+        "dofs": [
+          "极化",
+          "空间",
+          "频率",
+          "时间"
+        ],
+        "mechanism": [
+          "线性光学",
+          "局域测量"
+        ],
+        "topology": [
+          "两方",
+          "并行"
+        ]
+      }
+    },
+    {
+      "doi": "",
+      "arxiv": "",
+      "role": "团队公开基线",
+      "stage": "理论方案",
+      "access": "开放全文",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2025-03-11",
+      "updated": "",
+      "issueDate": "2025-10",
+      "dateNote": "网络出版 2025-03-11；卷期为 2025 年第 10 期，分开记录。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "正式版本",
+      "sourceLabel": "出版社原始论文 PDF",
+      "priority": "背景基线",
+      "id": "nv-rio-2025-100312",
+      "title": "基于金刚石NV色芯极化-时间两自由度并行稳健非定域控制非门的远程实现",
+      "zhTitle": "NV 色心辅助的极化—时间两自由度非定域 CNOT",
+      "authors": "谢倩珠; 陆霓诗; 黄培文; 周萍",
+      "journal": "中国科学：物理学 力学 天文学 55, 100312 (2025)",
+      "direction": "远程量子操作 RIO",
+      "url": "https://cdn.sciengine.com/doi/pdf/28EBB9AEA36C49509939AE57EA77BCCF",
+      "summary": "提出利用 NV 色心单边光学腔平衡条件实现极化—时间并行非定域 CNOT 的方案。",
+      "focus": "为腔辅助非定域门及条件稳健性提供本组公开比较锚点。",
+      "boundary": "仅核验摘要与元数据；理论方案不标成实验演示，腔平衡条件需独立比较。",
+      "nextAction": "提取腔参数与平衡条件，核对探测与损耗假设。",
+      "dimensions": {
+        "target": [
+          "CNOT门"
+        ],
+        "resource": [
+          "超纠缠"
+        ],
+        "dofs": [
+          "极化",
+          "时间"
+        ],
+        "mechanism": [
+          "NV色心",
+          "光学腔",
+          "局域测量"
+        ],
+        "topology": [
+          "两方",
+          "并行"
+        ]
+      }
+    },
+    {
+      "doi": "10.1002/qute.202400583",
+      "arxiv": "",
+      "role": "外部文献",
+      "stage": "理论方案",
+      "access": "摘要可读",
+      "readDepth": "摘要初筛",
+      "firstPublished": "2024-12-30",
+      "updated": "",
+      "issueDate": "2025-06",
+      "dateNote": "首次在线 2024-12-30；2025 年卷期，不作为 2025 年首次发布。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "正式版本",
+      "sourceLabel": "出版社原始页面",
+      "priority": "重点核对",
+      "id": "doi:10.1002/qute.202400583",
+      "title": "Remote Implementation of Particular Subsets of Operations in two Degrees of Freedom",
+      "zhTitle": "两自由度上特定操作子集的远程实现",
+      "authors": "Meiyu Wang; Jiashuai Cao; Bing Di",
+      "journal": "Advanced Quantum Technologies 8, 2400583 (2025)",
+      "direction": "远程量子操作 RIO",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/qute.202400583",
+      "summary": "使用极化—时间超纠缠光子对及基于有效 Kerr 相互作用的奇偶 QND，研究受限操作子集的 RIO。",
+      "focus": "是多自由度受限操作及 Kerr-QND 路线中值得优先比较的外部基线。",
+      "boundary": "摘要初筛；器件与耗散模型依赖假设，未据摘要核验完整测量分支或装置实现。",
+      "nextAction": "逐项比较操作集合、光子资源、编码、QND 与恢复条件。",
+      "dimensions": {
+        "target": [
+          "受限单比特操作"
+        ],
+        "resource": [
+          "超纠缠光子对"
+        ],
+        "dofs": [
+          "极化",
+          "时间"
+        ],
+        "mechanism": [
+          "交叉Kerr",
+          "QND",
+          "X零差"
+        ],
+        "topology": [
+          "两方",
+          "并行"
+        ]
+      }
+    },
+    {
+      "id": "arxiv:2611.14623",
+      "doi": "",
+      "arxiv": "2611.14623",
+      "title": "Towards Distributed Quantum Computing: Quantum Gate Teleportation via Satellite-Distributed Entanglement under Atmospheric Depolarization",
+      "zhTitle": "Towards Distributed Quantum Computing: Quantum Gate Teleportation via Satellite-Distributed Entanglement under Atmospheric Depolarization",
+      "authors": "Artur Czerwinski; Jakub J. Borkowski; Maciej Wiśniewski; Saeed Haddadi",
+      "journal": "arXiv · quant-ph",
+      "direction": "远程量子操作 RIO",
+      "role": "外部文献",
+      "stage": "待核验",
+      "access": "见原始来源",
+      "readDepth": "元数据候选",
+      "firstPublished": "2026-11-10",
+      "updated": "2026-11-10",
+      "issueDate": "",
+      "dateNote": "自动发现的元数据日期，需对照原始版本；卷期与首发日期分别保留。",
+      "discovered": "2026-11-18",
+      "verified": "2026-11-18",
+      "version": "v1 · 预印本",
+      "url": "https://arxiv.org/abs/2611.14623",
+      "sourceLabel": "arXiv 原始版本元数据（自动候选）",
+      "summary": "公开元数据自动发现的相关候选。原始摘要与全文尚待人工核对。",
+      "focus": "公开检索词命中研究方向；请确认具体任务、资源和贡献边界。",
+      "boundary": "自动收录不代表已精读，不判断稿件实质重叠、抄袭或创新性。",
+      "nextAction": "打开原始来源，核对摘要、协议属性及与在研课题的具体关系。",
+      "priority": "建议阅读",
+      "dimensions": {
+        "target": [],
+        "resource": [],
+        "dofs": [],
+        "mechanism": [],
+        "topology": []
+      }
+    }
+  ],
+  "reviews": [],
+  "actions": [
+    {
+      "id": "a-rio-baseline",
+      "paperId": "doi:10.1002/qute.202400583",
+      "text": "先建立两自由度 RIO 的逐项基线，保留全文未核验项。",
+      "done": false
+    },
+    {
+      "id": "a-date-check",
+      "paperId": "doi:10.1140/epjqt/s40507-026-00537-4",
+      "text": "核对首次发表与正式版本日期差异，确认是否涉及技术内容更新。",
+      "done": false
+    },
+    {
+      "id": "a-profile",
+      "paperId": "",
+      "text": "有具体在研稿件后，补充目标态 / 操作集合、资源、控制条件及主张边界。",
+      "done": false
+    }
+  ],
+  "reports": [
+    {
+      "id": "github-scan-2026-11-18",
+      "checked": "2026-11-18",
+      "summary": "公开元数据扫描：RSP / RIO 两方向，回看 14 天；收录或版本信息变化 1 项。新候选尚待人工核验摘要与全文，不作稿件重叠判断。覆盖仅限列出的检索来源。",
+      "sourceChecks": [
+        "arXiv quant-ph 公开术语检索：1 条相关元数据候选；回看 14 天。",
+        "arXiv 已有记录版本核对：2 条。",
+        "Crossref 题名检索 remote state preparation：0 条候选；原始摘要待人工核对。",
+        "Crossref 题名检索 remote implementation quantum operations：0 条候选；原始摘要待人工核对。",
+        "Crossref 题名检索 quantum operations teleportation：0 条候选；原始摘要待人工核对。"
+      ],
+      "failures": [],
+      "changes": [
+        {
+          "paperId": "arxiv:2611.14623",
+          "kind": "首次收录 · 元数据候选",
+          "title": "Towards Distributed Quantum Computing: Quantum Gate Teleportation via Satellite-Distributed Entanglement under Atmospheric Depolarization",
+          "before": null,
+          "after": {
+            "id": "arxiv:2611.14623",
+            "doi": "",
+            "arxiv": "2611.14623",
+            "title": "Towards Distributed Quantum Computing: Quantum Gate Teleportation via Satellite-Distributed Entanglement under Atmospheric Depolarization",
+            "zhTitle": "Towards Distributed Quantum Computing: Quantum Gate Teleportation via Satellite-Distributed Entanglement under Atmospheric Depolarization",
+            "authors": "Artur Czerwinski; Jakub J. Borkowski; Maciej Wiśniewski; Saeed Haddadi",
+            "journal": "arXiv · quant-ph",
+            "direction": "远程量子操作 RIO",
+            "role": "外部文献",
+            "stage": "待核验",
+            "access": "见原始来源",
+            "readDepth": "元数据候选",
+            "firstPublished": "2026-11-10",
+            "updated": "2026-11-10",
+            "issueDate": "",
+            "dateNote": "自动发现的元数据日期，需对照原始版本；卷期与首发日期分别保留。",
+            "discovered": "2026-11-18",
+            "verified": "2026-11-18",
+            "version": "v1 · 预印本",
+            "url": "https://arxiv.org/abs/2611.14623",
+            "sourceLabel": "arXiv 原始版本元数据（自动候选）",
+            "summary": "公开元数据自动发现的相关候选。原始摘要与全文尚待人工核对。",
+            "focus": "公开检索词命中研究方向；请确认具体任务、资源和贡献边界。",
+            "boundary": "自动收录不代表已精读，不判断稿件实质重叠、抄袭或创新性。",
+            "nextAction": "打开原始来源，核对摘要、协议属性及与在研课题的具体关系。",
+            "priority": "建议阅读",
+            "dimensions": {
+              "target": [],
+              "resource": [],
+              "dofs": [],
+              "mechanism": [],
+              "topology": []
+            }
+          }
+        }
+      ],
+      "baseline": false
+    },
+    {
+      "id": "public-baseline-2026-11-18",
+      "checked": "2026-11-18",
+      "summary": "首轮公开基线：12 篇文献，含 9 篇外部工作和 3 篇团队公开基线。初始核验以摘要、元数据和版本记录为主，不作为本日新增。公开版自动扫描仅发现元数据候选，实质相近程度仍需人工比较。",
+      "sourceChecks": [
+        "https://arxiv.org/abs/2610.42150",
+        "https://arxiv.org/abs/2610.04995",
+        "https://link.springer.com/article/10.1007/s12043-026-03170-z",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0030399226004597",
+        "https://link.springer.com/article/10.1140/epjqt/s40507-026-00537-4",
+        "https://link.springer.com/article/10.1007/s11128-026-05234-w",
+        "https://link.springer.com/article/10.1007/s11128-026-05080-w",
+        "https://www.nature.com/articles/s41598-026-35816-8",
+        "https://link.springer.com/article/10.1140/epjp/s13360-026-07289-1",
+        "https://link.springer.com/article/10.1140/epjqt/s40507-025-00365-y",
+        "https://cdn.sciengine.com/doi/pdf/28EBB9AEA36C49509939AE57EA77BCCF",
+        "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/qute.202400583"
+      ],
+      "failures": [
+        "Elsevier 部分原文访问受限；初始资料不是完整系统综述。"
+      ],
+      "changes": [],
+      "baseline": true
+    }
+  ]
+}

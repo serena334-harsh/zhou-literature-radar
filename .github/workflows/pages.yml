@@ -1,0 +1,51 @@
+name: Update literature and deploy Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * *'
+      timezone: 'America/Los_Angeles'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: public-literature-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: npm ci --no-audit --no-fund
+      - run: npm test
+      - name: Check public metadata sources
+        run: python scripts/update_public.py
+      - name: Save public scan record
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/data/public-radar.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update public literature metadata and scan report"
+            git push
+          fi
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Deploy public website
+        id: deployment
+        uses: actions/deploy-pages@v4
