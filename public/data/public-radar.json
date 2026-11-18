@@ -686,10 +686,10 @@
     {
       "id": "github-scan-2026-11-18",
       "checked": "2026-11-18",
-      "summary": "公开元数据扫描：RSP / RIO 两方向，回看 14 天；收录或版本信息变化 1 项。新候选尚待人工核验摘要与全文，不作稿件重叠判断。覆盖仅限列出的检索来源。",
+      "summary": "公开元数据扫描：RSP / RIO 两方向，回看 14 天；收录或版本信息变化 0 项。新候选尚待人工核验摘要与全文，不作稿件重叠判断。覆盖仅限列出的检索来源。",
       "sourceChecks": [
         "arXiv quant-ph 公开术语检索：1 条相关元数据候选；回看 14 天。",
-        "arXiv 已有记录版本核对：2 条。",
+        "arXiv 已有记录版本核对：3 条。",
         "Crossref 题名检索 remote state preparation：0 条候选；原始摘要待人工核对。",
         "Crossref 题名检索 remote implementation quantum operations：0 条候选；原始摘要待人工核对。",
         "Crossref 题名检索 quantum operations teleportation：0 条候选；原始摘要待人工核对。"
