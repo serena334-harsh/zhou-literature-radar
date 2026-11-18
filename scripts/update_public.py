@@ -136,6 +136,7 @@ def run(today,filename=DATA):
     if previous:
         combined={ (c['paperId'],c['kind']):c for c in previous['changes']+changes }
         report['changes']=list(combined.values())
+        report['summary']=f'公开元数据扫描：RSP / RIO 两方向，回看 {lookback} 天；本次条目变化 {len(changes)} 项，本日累计 {len(report["changes"])} 项。自动候选尚待人工核验，不作稿件重叠判断。覆盖仅限列出的检索来源。'
     data['reports']=[report]+[r for r in data['reports'] if r['id']!=report['id']]
     data['reports']=data['reports'][:90]
     data['lastChecked']=today
