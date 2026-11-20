@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastChecked": "2026-11-19",
+  "lastChecked": "2026-11-20",
   "schedule": "GitHub Actions · 每日 09:00 洛杉矶时间（公开元数据扫描，可能延后）",
   "topics": [
     {
@@ -51,7 +51,7 @@
       "issueDate": "",
       "dateNote": "未知日期留空；首次收录日不等于论文发表日。",
       "discovered": "2026-11-18",
-      "verified": "2026-11-19",
+      "verified": "2026-11-20",
       "version": "v1 · 预印本",
       "sourceLabel": "arXiv 原始摘要与版本记录",
       "priority": "重点核对",
@@ -99,7 +99,7 @@
       "issueDate": "",
       "dateNote": "未知日期留空；首次收录日不等于论文发表日。",
       "discovered": "2026-11-18",
-      "verified": "2026-11-19",
+      "verified": "2026-11-20",
       "version": "v1 · 预印本",
       "sourceLabel": "arXiv 原始摘要与版本记录",
       "priority": "重点核对",
@@ -643,7 +643,7 @@
       "issueDate": "",
       "dateNote": "自动发现的元数据日期，需对照原始版本；卷期与首发日期分别保留。",
       "discovered": "2026-11-18",
-      "verified": "2026-11-19",
+      "verified": "2026-11-20",
       "version": "v1 · 预印本",
       "url": "https://arxiv.org/abs/2611.14623",
       "sourceLabel": "arXiv 原始版本元数据（自动候选）",
@@ -683,6 +683,21 @@
     }
   ],
   "reports": [
+    {
+      "id": "github-scan-2026-11-20",
+      "checked": "2026-11-20",
+      "summary": "公开元数据扫描：RSP / RIO 两方向，回看 14 天；收录或版本信息变化 0 项。新候选尚待人工核验摘要与全文，不作稿件重叠判断。覆盖仅限列出的检索来源。",
+      "sourceChecks": [
+        "arXiv quant-ph 公开术语检索：1 条相关元数据候选；回看 14 天。",
+        "arXiv 已有记录版本核对：3 条。",
+        "Crossref 题名检索 remote state preparation：0 条候选；原始摘要待人工核对。",
+        "Crossref 题名检索 remote implementation quantum operations：0 条候选；原始摘要待人工核对。",
+        "Crossref 题名检索 quantum operations teleportation：0 条候选；原始摘要待人工核对。"
+      ],
+      "failures": [],
+      "changes": [],
+      "baseline": false
+    },
     {
       "id": "github-scan-2026-11-19",
       "checked": "2026-11-19",
